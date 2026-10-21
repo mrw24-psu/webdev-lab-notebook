@@ -1,1 +1,211 @@
 /* Add your CSS code here  */
+
+:root {
+  --ice-blue-juvie: #8fbcd4;
+  --gothic-gray-blue: #6f8796;
+  --dark-slate-infinity: #1f2a33;
+  --gray-border: #ccc;
+  --text-color: #121212;
+  --table-background: #f0f0f0;
+  --midnight-blue: #161678;
+  --form-background: #fafafa;
+  --background-color: #f7f7f7;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  color: var(--text-color);
+  line-height: 1.5;
+  background-color: var(--background-color);
+}
+
+/* 01-books styles */
+
+.custom-font {
+  font-family: "Cinzel";
+}
+
+.nav {
+  background-color: var(--dark-slate-infinity);
+}
+
+.nav-link {
+  color: var(--ice-blue-juvie);
+  text-decoration: none;
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+  font-weight: 500;
+  transition:
+    background 0.5s,
+    color 0.5s;
+}
+
+.nav-list {
+  margin: 0px;
+  padding: 1rem;
+  padding-left: 0px;
+  text-align: center;
+  list-style: none;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 0px 1rem;
+}
+
+.nav-link:hover {
+  background-color: var(--ice-blue-juvie);
+  color: var(--dark-slate-infinity);
+}
+
+.main-heading {
+  margin: 2rem;
+  color: var(--gothic-gray-blue);
+  text-align: center;
+}
+
+.h2 {
+  border-bottom: 2px solid var(--gray-border);
+}
+
+.books-container {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  margin-bottom: 50px;
+}
+
+.books-list {
+  padding-left: 1.25rem;
+}
+
+.books-list li {
+  margin-bottom: 0.5rem;
+}
+
+.books-list li > ol {
+  margin-top: 0.5rem;
+}
+
+.images-container {
+  text-align: center;
+}
+
+.book-image {
+  border-radius: 5px;
+  transition: transform 0.2s ease;
+}
+
+.book-image:hover {
+  transform: scale(1.1);
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid var(--gray-border);
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.table tr:nth-child(even) {
+  background-color: var(--table-background);
+}
+
+.table-heading {
+  background-color: var(--table-background);
+}
+
+.table-footing td {
+  font-weight: bold;
+  background-color: var(--table-background);
+}
+
+/* 02-form styles */
+
+.form-container {
+  margin: 100px auto;
+  max-width: 500px;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: var(--form-background);
+}
+
+.ira-form {
+  padding: 1rem;
+}
+
+.form-element {
+  margin: 0px auto 1rem auto;
+}
+
+.form-element:last-of-type {
+  margin: 1rem 0px;
+}
+
+.form-input {
+  display: inline-block;
+  width: 45%;
+  border: 1px solid var(--gray-border);
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.form-radios {
+  margin-left: 40px;
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  display: inline-block;
+  width: 50%;
+}
+
+.btn {
+  display: inline-block;
+  width: 49%;
+  border: 0;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.btn-reset {
+  float: right;
+}
+
+.btn-submit {
+  background-color: var(--midnight-blue);
+  color: white;
+}
+
+.btn-submit:hover {
+  background-color: mediumblue;
+}
+
+.h1 {
+  text-align: center;
+  margin: 1rem 0px;
+  color: var(--midnight-blue);
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.color-blue {
+  background-color: var(--midnight-blue);
+}
+
+.form-note {
+  font-size: 0.8rem;
+}
+
+.form-note a {
+  color: var(--midnight-blue);
+}
